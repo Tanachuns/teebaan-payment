@@ -1,2 +1,33 @@
-.vscode
-node_modules
+# Binaries and executables
+/build/
+/bin/
+*.exe
+*.out
+*.app
+
+# Go dependencies
+/vendor/
+go.sum
+go.mod
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+
+# Logs and temp files
+*.log
+*.tmp
+*.test
+/tmp/
+.DS_Store
+
+# Docker
+docker-compose.override.yml
+.env
+
+# Node modules (if using frontend)
+node_modules/
+
+# Coverage reports
+coverage.out
