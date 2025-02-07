@@ -7,5 +7,6 @@ import (
 )
 
 func RegisterRoutes(e *echo.Echo) {
-	e.GET("/users/:id", controllers.GetUser)
+	api_group := e.Group("api/v1/")
+	api_group.GET("users/:id", controllers.GetUser)
 }
